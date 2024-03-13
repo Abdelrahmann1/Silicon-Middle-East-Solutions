@@ -1,0 +1,65 @@
+.card-top{
+    width: 100%;
+}
+.secon-title{
+    line-height: 3rem;
+}
+.klam2 >h1{
+    color: #263238 !important;
+}
+.img-fluid{
+    width: 50%;
+}.fab{
+    font-size: 50px;color:#AD002B;
+}
+.card-title{
+    font-size: 30px;
+    
+}
+.number{
+background-color: #AD002B;
+border-radius: 50%;
+font-size: 30px;
+width: 3rem;
+height: 3rem;
+color: white;
+text-align: center;
+}
+a:hover{
+  color:#AD002B;
+
+}
+.preview-card{
+    width: 100% !important;
+}
+
+.clutch{
+    width: 100%;
+}
+.carduya{
+    border: none;
+}
+.langs > h1,.langs >p{
+    text-align: center;
+}
+.start-btn-por {
+    font-size: 18px;
+    color: #333 !important;
+    margin: 1rem .5rem;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 5px !important;
+    background-color:#ddd;
+    
+}.start-btn-por:hover {
+    color: #202020 !important;
+    background-color:#9c9a9a;
+    
+}
+.start-btn-por-active {
+    font-size: 18px;
+    border-radius: 5px !important;
+    margin: 1rem 0;
+    padding: .5rem 1rem;
+    background-color: rgb(202, 2, 2);
+}

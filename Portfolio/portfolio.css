@@ -1,0 +1,148 @@
+.about{
+    position: relative;
+    width: 100vw;
+
+}
+p{
+    width: fit-content !important;
+}
+.about-img{
+    width: 100%;
+    filter: brightness(60%);
+    z-index: -1;
+    
+}
+.about-title,.about-desc{
+    position: absolute;
+    color: white;
+    z-index: 1;
+}
+.about-title{
+    font-size: 40px;
+    top: 3%;
+    font-weight: 900;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+}
+
+.about-desc{
+    font-weight: 700;
+    font-size: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,100%);
+}
+.about-desc2{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.about-m-title{
+    color: #54595f;
+    font-weight: 400;
+    font-size: 33px;
+    margin-bottom: 1px;
+}
+.about-m-que{
+    color: #263238;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 1px;
+}
+.about-m-desc{
+    color: #263238;
+    font-weight: 400;
+    font-size: 18px;
+}
+.about-sec{
+    color: #263238;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 2rem;
+
+}
+.about-sec2{
+    color: #2c353a;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 2rem;
+
+}
+
+.ultimate-row{
+    color: #263238;
+    font-size: 30px;
+    font-weight: 700;
+}
+.cuns-img{
+width: 80%;
+}
+.card-text{
+    color: #263238;
+    font-size: 20px;
+    font-weight: 700;
+}
+.card-img-top-icon{
+    width: 100%;
+    text-align: center;
+    margin: 1%;
+font-size:  13rem;
+color: #ac0c17;
+}
+.cardaya-sym{
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+.fa-chevron-right::before {
+    content: "\f054";
+    background-color: #bb002f;
+
+    border-radius: 10px !important;
+
+    padding: 7px 12px;
+}
+
+.fa-chevron-left::before {
+    content: "\f053";
+    background-color: #bb002f;
+
+    border-radius: 10px !important;
+
+    padding: 7px 12px;
+}
+
+.fa-chevron-right,
+.fa-chevron-left {
+    /* z-index: 999; */
+    display: inline;
+    width: fit-content;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 900;
+}
+
+
+.start-btn-por {
+    font-size: 18px;
+    color: #333 !important;
+    margin: 1rem .5rem;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 5px !important;
+    background-color:#ddd;
+    
+}.start-btn-por:hover {
+    color: #202020 !important;
+    background-color:#9c9a9a;
+    
+}
+.start-btn-por-active {
+    font-size: 18px;
+    border-radius: 5px !important;
+    margin: 1rem 0;
+    padding: .5rem 1rem;
+    background-color: rgb(202, 2, 2);
+}

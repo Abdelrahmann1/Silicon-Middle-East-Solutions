@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css"
+    integrity="sha512-tx5+1LWHez1QiaXlAyDwzdBTfDjX07GMapQoFTS74wkcPMsI3So0KYmFe6EHZjI8+eSG0ljBlAQc3PQ5BTaZtQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top ">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#"><img class="logo-img-nav" src="assets/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse justify-content-end  navbar-collapse" id="nvbCollapse">
+        <ul class="navbar-nav  ml-auto">
+          <li class="nav-item active pl-1">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item  pl-1">
+            <a class="nav-link" href="./About_us/about.html">About Us</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">Web Development &raquo;</a>
+                <ul class="submenu dropdown-menu">
+                  <li><a class="dropdown-item" href="./Services/Web/Web-dev/web-div.html">Website Development</a></li>
+                  <li><a class="dropdown-item" href="#">Web Design & Deveopment</a></li>
+                  <li><a class="dropdown-item" href="#">Maintaince & Support</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">App Development &raquo;</a>
+                <ul class="submenu dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Cross platform Mobile App</a></li>
+                  <li><a class="dropdown-item" href="#">Mobile UI/UX Design</a></li>
+
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">Branding &raquo;</a>
+                <ul class="submenu dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Graphic Design</a></li>
+                  <li><a class="dropdown-item" href="#">Branding identity</a></li>
+
+                </ul>
+              </li>
+
+            </ul>
+          </li>
+
+
+          <li class="nav-item pl-1">
+            <a class="nav-link" href="./Portfolio/portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item pl-1">
+            <a class="nav-link mx-2 btn rounded-0 btn-danger" href="./Contact_us/contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('.dropdown-submenu').forEach(function (submenu) {
+      submenu.addEventListener('mouseenter', function () {
+        var parentRect = this.parentElement.getBoundingClientRect();
+        var submenuRect = this.querySelector('.submenu').getBoundingClientRect();
+        var offsetRight = parentRect.right + submenuRect.width;
+        var viewportWidth = window.innerWidth;
+
+        if (offsetRight > viewportWidth) {
+          
+          this.querySelector('.submenu').style.left = 'auto';
+            this.querySelector('.submenu').style.right = '100%';
+          this.querySelector('.submenu').classList.add('submenu-right');
+        } else {
+          
+          // this.querySelector('.submenu').style.left = '100%';
+            // this.querySelector('.submenu').style.right = 'auto';
+          this.querySelector('.submenu').classList.remove('submenu-right');
+        }
+
+        this.querySelector('.submenu').style.display = 'block';
+      });
+
+      submenu.addEventListener('mouseleave', function () {
+        this.querySelector('.submenu').style.display = 'none';
+      });
+    });
+  });
+  
+  </script>
+  
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <a href=".assets/index.html">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Home</h5>
+      </a>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        <ul class="navbar-nav  ml-auto">
+          <li class="nav-item pl-1">
+            <a class="nav-link" href="#"><i class="fa fa-home fa-fw mr-1"></i>Home</a>
+          </li>
+          <li class="nav-item active pl-1">
+            <a class="nav-link" href="./About_us/about.html"><i class="fa fa-th-list fa-fw mr-1"></i>About Us</a>
+          </li>
+          <li class="nav-item pl-1">
+            <a class="nav-link" href="#"><i class="fa fa-info-circle fa-fw mr-1"></i>Services</a>
+          </li>
+          <li class="nav-item pl-1">
+            <a class="nav-link" href="./Portfolio/portfolio.html"><i class="fa fa-phone fa-fw fa-rotate-180 mr-1"></i>Portfolio</a>
+          </li>
+          <li class="nav-item pl-1">
+            <a class="nav-link mx-2 btn rounded-0 btn-danger" href="./Contact_us/contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <div class="container p-6">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <p class="red-title">Responsive</p>
+              <p class="secon-title">Website & System <br> Development </p>
+              <p class="first-desc">we provide custom website development in a <br> profesional way with many language
+              </p>
+              <a class="btn start-btn rounded-0 btn-danger text-white" href="#">Start a project</a>
+
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <img src="assets/Capture.PNG" class="first0img" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item " data-bs-interval="10000">
+        <div class="container p-6">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <p class="red-title">Responsddsive</p>
+              <p class="secon-title">Websiafte & System <br> Development </p>
+              <p class="first-desc">we provide custom website development in a <br> profesional way with many language
+              </p>
+              <a class="btn start-btn rounded-0 btn-danger text-white" href="#">Start a project</a>
+
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <img src="assets/Capture.PNG" class="first0img" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item " data-bs-interval="10000">
+        <div class="container p-6">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <p class="red-title">Responsasfsive</p>
+              <p class="secon-title">Websasfite & System <br> Development </p>
+              <p class="first-desc">we provide custom website development in a <br> profesional way with many language
+              </p>
+              <a class="btn start-btn rounded-0 btn-danger text-white" href="#">Start a project</a>
+
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <img src="assets/Capture.PNG" class="first0img" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container mt-0 mb-5">
+    <div class="row klam">
+      <h1>Exceptional Software Products
+      </h1>
+      <p>
+        We have been in the software development business for 17 years. During this time, we worked with different
+        industries. Our goal has been to provide top custom software development that meet our clients' needs and
+        desires. This has made us a top provider of custom software development services.
+      </p>
+      <p>Our software house in Egypt, the USA and the Middle East. operates with seamless efficiency and optimal
+        productivity, we leverage the most advanced technologies and solutions. Furthermore, QTS provides comprehensive
+        digital marketing services.</p>
+      <p>
+        We are proud to have served a diverse range of prominent clients, including:
+
+      </p>
+    </div>
+  </div>
+
+
+  <div class="container mt-5 mb-5">
+    <div id="carouselExampleIndicators14" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators14" data-bs-slide-to="0"
+          class="active btn-carou" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators14" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators14" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex row flex-row justify-content-evenly  ">
+            <div class="card col-lg-6 col-md-6 col-sm-12  mb-5" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4 d-flex justify-content-center  align-items-center ">
+                  <img src="assets/Capture.PNG" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card titsle</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.</p>
+                    <p class="card-text preview-card">Preview Full Project</p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card col-lg-6 col-md-6 col-sm-12  mb-5" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4 d-flex justify-content-center  align-items-center ">
+                  <img src="assets/Capture.PNG" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card d</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.</p>
+                    <p class="card-text preview-card">Preview Full Project</p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <div class="d-flex row  flex-row justify-content-evenly  ">
+            <div class="card col-lg-6 col-md-6 col-sm-12  mb-5" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4 d-flex justify-content-center  align-items-center ">
+                  <img src="assets/Capture.PNG" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.</p>
+                    <p class="card-text preview-card">Preview Full Project</p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card col-lg-6 col-md-6 col-sm-12  mb-5" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4 d-flex justify-content-center  align-items-center ">
+                  <img src="assets/Capture.PNG" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.</p>
+                    <p class="card-text preview-card">Preview Full Project</p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <div class="d-flex row flex-row justify-content-evenly  ">
+            <div class="card col-lg-6 col-md-6 col-sm-12  mb-5" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4 d-flex justify-content-center  align-items-center ">
+                  <img src="assets/Capture.PNG" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+                      voluptatum ducimus fugit non laborum libero quia ad, molestiae repudiandae quidem dignissimos,
+                      reiciendis, temporibus dolores sint maiores esse explicabo fuga ut?</p>
+                    <p class="card-text preview-card">Preview Full Project</p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card col-lg-6 col-md-6 col-sm-12  mb-5" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4 d-flex justify-content-center  align-items-center ">
+                  <img src="assets/Capture.PNG" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.</p>
+                    <p class="card-text preview-card">Preview Full Project</p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="container mt-5 mb-5">
+    <div class="row klam2">
+      <h1>Full-Service Software House in Egypt & USA Trusted By</h1>
+    </div>
+    <div class="row d-flex  flex-row justify-content-center ">
+      <img src="assets/clutch.png" class="clutch" alt="">
+      <img src="assets/clutch.png" class="clutch" alt="">
+      <img src="assets/clutch.png" class="clutch" alt="">
+      <img src="assets/clutch.png" class="clutch" alt="">
+      <img src="assets/clutch.png" class="clutch" alt="">
+    </div>
+  </div>
+
+
+
+
+
+  <div class="container mt-5 mb-5">
+    <div class="row klam2">
+      <h1>Our Software Company Approach With 17 Years of Experience</h1>
+      <p>A well-defined approach is vital to successfully deliver projects from start to finish. <br>
+        We aim to deliver high-quality full cycle software development.</p>
+    </div>
+    <div class="row d-flex  flex-row justify-content-center ">
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="klam-col">
+          <h1>Strategy</h1>
+          <p>We initiate the product strategy by conducting detailed discussions with the client to understand their
+            specific needs, goals, and expectations.
+          </p>
+        </div>
+        <div class="step_sep"></div>
+        <div class="img-col">
+          <img src="assets/Group-4814.png.webp" alt="">
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="img-col">
+          <img src="assets/Group-4814.png.webp" alt="">
+        </div>
+        <div class="step_sep"></div>
+        <div class="klam-col">
+          <h1>Strategy</h1>
+          <p>We initiate the product strategy by conducting detailed discussions with the client to understand their
+            specific needs, goals, and expectations.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="klam-col">
+          <h1>Strategy</h1>
+          <p>We initiate the product strategy by conducting detailed discussions with the client to understand their
+            specific needs, goals, and expectations.
+          </p>
+        </div>
+        <div class="step_sep"></div>
+        <div class="img-col">
+          <img src="assets/Group-4814.png.webp" alt="">
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="img-col">
+          <img src="assets/Group-4814.png.webp" alt="">
+        </div>
+        <div class="step_sep"></div>
+        <div class="klam-col">
+          <h1>Strategy</h1>
+          <p>We initiate the product strategy by conducting detailed discussions with the client to understand their
+            specific needs, goals, and expectations.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <p class="red-title2">Solutions We Deliver</p>
+        <p class="secon-title2">We offer list of top business services you looking for. </p>
+        <div class="sm-caro" onclick="chnge_service('web')">
+          <i class="fa-solid fa-chevron-right"></i>
+          <p>Web development</p>
+        </div>
+        <div class="sm-caro" onclick="chnge_service('app')">
+          <i class="fa-solid fa-chevron-right"></i>
+          <p>App development</p>
+        </div>
+
+        <div class="sm-caro" onclick="chnge_service('branding')">
+          <i class="fa-solid fa-chevron-right"></i>
+          <p>Branding</p>
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-8 col-sm-12 d-flex service">
+        <img src="assets/web-service.webp" class="first0img2" id="service-photo" alt="">
+        <div class="ps-3 d-flex flex-column ">
+          <p class="secon-title3" id="service-text">Web development involves creating websites and web applications
+            using various
+            technologies. The choice of technologies depends on requirements, performance considerations, and team
+            member's preferences. <br> Our software company presents DevOps, ecommerce, cloud, and data analytics, all
+            enabled by top technologies such as Node.js, Python, PHP and many others.</p>
+          <div class="service-t d-flex flex-row align-items-center ">
+
+            <p class="preview-card3" id="goes">Website Development</p>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="container mt-5 mb-5">
+    <div class="row  text-center ">
+      <p class="red-title2  ">Latest Clients And Brands
+      </p>
+      <p class="secon-title2">Our primary goal is to deliver professional services that are fully aligned with your
+        business needs.<br> Ensuring they are tailored and ready to meet your requirements.
+      </p>
+    </div>
+    <div class="row d-flex  flex-row justify-content-center ">
+      <img src="assets/clutch-brasnds.webp" class="clutch-brands" alt="">
+      <img src="assets/clutch-brasnd3s.webp" class="clutch-brands" alt="">
+      <img src="assets/clutch-brasnds.webp" class="clutch-brands" alt="">
+      <img src="assets/clutch-brasnds.webp" class="clutch-brands" alt="">
+      <img src="assets/clutch-brasnds.webp" class="clutch-brands" alt="">
+      <img src="assets/clutch-brasnds.webp" class="clutch-brands" alt="">
+      <img src="assets/clutch-brasnds.webp" class="clutch-brands" alt="">
+      <img src="assets/clutch-brasnds.webp" class="clutch-brands" alt="">
+    </div>
+  </div>
+
+
+
+  <div class="container mt-5 mb-5">
+    <div class="row  text-center ">
+      <p class="red-title2  ">TESTIMONIALS
+      </p>
+      <p class="secon-title2">What our clients say </p>
+    </div>
+    <div class="row  ">
+      <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-row">
+        <div class="cardaya-thanks">
+          <img src="assets/successful-projects.png.webp" alt="">
+          <p class="compl-n">+1000</p>
+          <p class="compl-t">Completed Projects
+          </p>
+        </div>
+
+        <div class="cardaya-thanks">
+          <img src="assets/successful-projects.png.webp" alt="">
+          <p class="compl-n">+1000</p>
+          <p class="compl-t">Completed Projects
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-row">
+        <div id="carouselExampleControls" class="carousel slide w-100 h-75 d-flex  justify-content-center "
+          data-bs-ride="carousel">
+          <svg fill="#f2f2f2" version="1.1" id="No_3" class="traingle" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 142 139" xml:space="preserve">
+            <path id="Path_26"
+              d="M92,6.9l35.2,25.7c12.6,9.2,17.8,25.4,13,40.2l-13.4,41.5C122,129,108.3,139,92.7,139H49.2                        c-15.5,0-29.3-10-34.1-24.8L1.8,72.7c-4.8-14.8,0.4-31,13-40.2L50,6.9C62.5-2.3,79.5-2.3,92,6.9z">
+            </path>
+          </svg>
+          <div class="carousel-inner  w-100 h-100  ">
+            <div class="carousel-item w-100 h-100   active">
+              <div class="mini-card">
+                <h1>blackatem</h1>
+                <h2>Owner</h2>
+                <p>
+                  We have been in the software development business for 17 years. During this time, we worked with
+                  different
+                </p>
+              </div>
+
+            </div>
+            <div class="carousel-item w-100 h-100   ">
+              <div class="mini-card">
+                <h1>blackatem</h1>
+                <h2>Owner</h2>
+                <p>
+                  We have been in the software development business for 17 years. During this time, we worked with
+                  different
+                </p>
+              </div>
+
+            </div>
+            <div class="carousel-item w-100 h-100   ">
+              <div class="mini-card">
+                <h1>blackatem</h1>
+                <h2>Owner</h2>
+                <p>
+                  We have been in the software development business for 17 years. During this time, we worked with
+                  different
+                </p>
+              </div>
+
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+            <i class="fa-solid fa-chevron-left"></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+            <i class="fa-solid fa-chevron-right"></i>
+
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start  ">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Company name
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Pages
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Home</a>
+            </p>
+            <p>
+              <a href="./About_us/about.html" class="text-reset">About Us</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Services</a>
+            </p>
+
+            <p>
+              <a href="./Portfolio/portfolio.html" class="text-reset">Portfolio</a>
+            </p>
+            <p>
+              <a href="./Contact_us/contact.html" class="text-reset">Contact Us</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Services
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Web Development</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">App Development</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Brnading</a>
+            </p>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+  </footer>
+  <!-- Footer -->
+
+  <script>
+
+    var photos = [
+      { url: "branding", goes: "Branding", text: `At QTS, we understand the importance of standing out from the crowd. So we offer a range of design services, including branding, creative graphics, and corporate identity to beat the competition. <br>Overall, branding services are essential for creating a distinct, memorable, and trustworthy brand. We help brands to build customer trust, foster emotional connections, and create a foundation for long-term success and growth.` },
+      { url: "app", goes: "Application Development", text: `Our mobile app development company provides the process of creating mobile applications that can run on cross platform.<br>QTS one of the best custom software development companies, in Egypt & United States. offers several software solution advantages, such as code reuse, faster development cycles, and reduced development costs. Additionally, it enables us to reach a larger audience by targeting multiple platforms.` },
+      { url: "web", goes: "Website Develepment", text: `Web development involves creating websites and web applications using various technologies. The choice of technologies depends on requirements, performance considerations, and team member's preferences. <br> Our software company presents DevOps, ecommerce, cloud, and data analytics, all enabled by top technologies such as Node.js, Python, PHP and many others.` },
+    ];
+
+    function chnge_service(name) {
+      var photo = document.getElementById("service-photo");
+      var text = document.getElementById("service-text");
+      var goes = document.getElementById("goes");
+
+      // Find the index of the service in the array based on the provided name
+      var index = photos.findIndex(service => service.url === name);
+
+      // Check if the service is found in the array
+      if (index !== -1) {
+        // Update the image source and text based on the found service
+        photo.src = "assets/" + name + "-service.webp";
+        text.innerHTML = photos[index].text;
+        goes.innerText = photos[index].goes;
+      } else {
+        // Handle the case when the service is not found
+        console.error("Service not found");
+      }
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+.contact-icon{
+    padding: 10px;
+    background-color: #ac0c17;
+    border-radius: 50%;
+    color: white;
+}
+.contact-info{
+    font-size: 20px;
+    font-weight: 600;
+    color: #384146;
+    border-bottom: #cbd1d4 .2px solid;
+    padding-bottom: 1rem;
+}
+.contact-info2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #384146;
+    padding-bottom: 1rem;
+}
+
+
+
+
+.fomr-inpt{
+    border: none !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 1rem 0;
+    height: 3rem;
+}
+.text-area{
+    
+    border: none !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 1rem 0;
+}
+
+.login-btn {
+  padding: 13px 30px;
+  background-color: #ac0c17;
+  border-radius: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff; }
+  .login-btn:hover {
+    border: 1px solid #ac0c17;
+    background-color: transparent;
+    color: #384146; }

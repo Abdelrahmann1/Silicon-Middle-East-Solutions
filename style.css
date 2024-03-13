@@ -1,0 +1,519 @@
+.btn {
+    border-radius: 10px !important;
+}
+body{
+    padding-top: 3rem;
+}
+a,a:hover{
+    text-decoration: none;
+}
+.w-30 {
+    width: 30%;
+}
+
+.w-10 {
+    width: 10%;
+}
+
+.ml-0 {
+    margin-left: 0;
+}
+
+.p-6 {
+    padding: 6%;
+}
+
+.navbar,
+footer {
+    background-color: #263238 !important;
+
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #ac0c17;
+}
+
+.navbar .navbar-nav .active>.nav-link {
+    color: #ac0c17;
+}
+
+footer a.text-light:hover {
+    color: #ac0c17 !important;
+    text-decoration: none;
+}
+
+footer .cizgi {
+    border-right: 1px solid #535e67;
+}
+
+@media (max-width: 992px) {
+    footer .cizgi {
+        border-right: none;
+    }
+}
+
+.navbar-nav {
+    gap: 1rem;
+}
+
+/* @media screen and (min-width:777px) {
+    .nav-link {
+        padding: 8px 0;
+        min-width: 120px;
+    }
+
+    .navbar {
+        padding: 0
+    }
+}
+@media (min-width:767px){
+
+    .img-nav {
+        width: 30% !important;
+    }
+
+    .logo-img-nav {
+        width: 75% !important;
+    }
+    .navbar-toggler{
+        display: inline-block;
+    }
+    .navbar-collapse{
+        display: none;
+    }
+}
+
+.nav-item {
+    padding: 2px 0;
+
+}
+
+
+
+.logo-img-nav {
+    width: 180px;
+}
+
+.active {
+    color: red !important;
+}
+.navbar-toggler{
+    display: none;
+}
+.nav-link-h {
+    text-align: center !important;
+} */
+.logo-img-nav {
+    width: 180px;
+}
+
+.navbar {
+    background-color: #263238 !important;
+}
+
+.first0img {
+    width: 100%;
+}
+
+.red-title {
+    font-size: 40px;
+    font-family: Montserrat, Arial;
+    color: red;
+}
+
+.secon-title {
+    font-weight: 700;
+    font-size: 50px;
+    color: #263238;
+}
+
+.first-desc {
+    font-weight: 400;
+    color: #535e67;
+    font-size: 20px;
+}
+
+.start-btn {
+    font-size: 22px;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    background-color: rgb(202, 2, 2);
+}
+
+.klam>h1 {
+    font-size: 25px;
+    color: rgb(197, 2, 2);
+}
+
+.klam>p {
+    font-size: 20px;
+    color: #535e67;
+    padding-top: .5rem;
+}
+
+.preview-card {
+    color: #bb002f;
+    text-align: end;
+    width: 80%;
+    display: inline-block;
+    font-weight: 900;
+
+}
+
+.fa-chevron-right::before {
+    content: "\f054";
+    background-color: #bb002f;
+
+    border-radius: 10px !important;
+
+    padding: 7px 12px;
+}
+
+.fa-chevron-left::before {
+    content: "\f053";
+    background-color: #bb002f;
+
+    border-radius: 10px !important;
+
+    padding: 7px 12px;
+}
+
+.fa-chevron-right,
+.fa-chevron-left {
+    /* z-index: 999; */
+    display: inline;
+    width: fit-content;
+    width: 18px;
+    height: 18px;
+    color: white;
+    font-weight: 900;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #bb002f;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.klam2>h1 {
+    font-size: 32px;
+    text-align: center;
+
+    color: #AD002B;
+}
+
+.clutch {
+    width: 20%;
+    margin: 20px 0;
+}
+
+.klam2>p {
+    font-size: 20px;
+    text-align: center;
+
+    color: #535e67;
+}
+
+.step_sep {
+    height: 1px;
+    position: relative;
+    background-color: #ddd;
+    margin: 35px 0;
+}
+
+.klam-col>h1 {
+    color: #ac0c17;
+    font-size: 28px;
+
+    text-align: center;
+}
+
+.klam-col>p {
+    color: #263238;
+    text-align: center;
+    font-size: 17px;
+
+    font-weight: 400;
+}
+
+
+
+.first0img2 {
+    width: 60%;
+    height: fit-content;
+}
+
+.red-title2 {
+    font-size: 36px;
+    line-height: 30px;
+    font-weight: 900;
+    color: #ad002b;
+}
+
+.secon-title2 {
+    font-weight: 400;
+    font-size: 18px;
+    color: #384146;
+}
+
+.secon-title3 {
+    font-weight: 400;
+    margin: 0 auto 10px auto;
+    font-size: 20px;
+}
+
+
+.sm-caro {
+    display: flex;
+    padding-left: 1rem;
+}
+
+.sm-caro>p {
+    padding-left: 1.5rem !important;
+    margin: 0;
+    font-weight: 700;
+    color: #535e67;
+}
+
+.sm-caro {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #d6d6d6;
+    padding-bottom: 1rem;
+}
+
+.preview-card3 {
+    color: #bb002f;
+    text-align: end;
+    /* width: 80%; */
+    display: inline-block;
+    font-weight: 400;
+    margin: 0;
+    margin-right: 1rem;
+}
+
+
+.clutch-brands {
+    width: 21%;
+    padding: 5% 2%;
+    margin: 20px 1%;
+    /* height: 1000%; */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+
+.cardaya-thanks>p {
+    width: fit-content;
+}
+
+.compl-n {
+    margin-top: 2rem;
+    color: #263238 !important;
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 0;
+
+}
+
+.compl-t {
+    margin-top: .1rem;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+.cardaya-thanks {
+    margin: 2rem 1rem;
+    width: 80%;
+    border: 3px solid #4f5b62;
+    border-radius: 30px;
+    /* position: relative; */
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cardaya-thanks img {
+    /* position: absolute; */
+    display: block;
+    margin-top: -20%;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 100%; */
+}
+
+.mini-card {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.traingle {
+    margin: auto;
+    /* z-index: -1; */
+    position: absolute;
+    height: 100%;
+}
+
+.mini-card>h1 {
+    font-size: 20px;
+    color: #384146;
+}
+
+.mini-card>h2 {
+    color: #ac0c17;
+
+    font-size: 15px;
+}
+
+.mini-card>p {
+    color: #484848;
+    width: 45%;
+    text-align: center;
+    max-height: 7.5rem; /* Adjust the maximum height */
+    line-height: 1.5; /* Adjust the line height for the number of lines you want to display */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+
+
+
+footer {
+    color: white !important;
+}
+
+.text-reset {
+    text-decoration: none;
+}
+
+
+
+
+@media (max-width:1199px) {
+
+
+
+
+    .first0img {
+        width: 100%;
+    }
+
+    .red-title {
+        margin-top: 1rem;
+        font-size: 35px;
+        color: red;
+    }
+
+    .secon-title {
+        font-weight: 700;
+        font-size: 35px;
+        color: #263238;
+    }
+
+    .first-desc {
+        font-weight: 400;
+        color: #535e67;
+        font-size: 18px;
+    }
+
+    .start-btn {
+        font-size: 18px;
+        margin: 1rem 0;
+        padding: .5rem 1rem;
+    }
+
+
+    .compl-n {
+        margin-top: 2rem;
+        color: #263238 !important;
+        font-size: 38px;
+        font-weight: 700;
+        margin-bottom: 0;
+
+    }
+
+    .compl-t {
+        margin-top: .1rem;
+        font-size: 18px;
+        width: 100%;
+        font-weight: 400;
+
+    }
+
+    .cardaya-thanks {
+        margin: 2rem 1rem;
+        width: 50%;
+        border: 3px solid #4f5b62;
+        border-radius: 30px;
+        /* position: relative; */
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .cardaya-thanks img {
+        /* position: absolute; */
+        display: block;
+        margin-top: -20%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+}
+.service{
+    flex-direction: row;
+}
+@media (max-width:1000px) {
+
+    .service{
+        flex-direction: column;
+    }
+    .first0img2{
+    width: 100%;
+    }
+    .clutch{
+        width: 50%;
+    }
+    .clutch-brands {
+        width: 41%;
+        padding: 5% 2%;
+        margin: 20px 1%;
+        /* height: 1000%; */
+        border: 1px solid #ddd;
+        border-radius: 10px;
+    }
+    
+    
+}
+@media (max-width:500px) {
+    
+    .traingle {
+        top: -19%;
+        height: 30vh;
+    }
+} .submenu-right {
+    position: absolute;
+    top: 0;
+    left: 100%;
+  }
+
+  .ensurance{
+    font-size: 30px;
+  }
