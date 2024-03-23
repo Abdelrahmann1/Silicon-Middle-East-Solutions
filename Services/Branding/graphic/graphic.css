@@ -87,3 +87,37 @@ a:hover{
 .sec-title{
     font-size: 35px !important;
 }
+.sec-desc-2{
+    font-size: 21px !important;
+    line-height: 2rem;
+}
+.graphic{
+    font-size: 20px;
+}
+.graphic-card{
+    border: 5px solid #4f5b62;
+    border-radius: 30px;
+    padding: 1rem;
+}
+.number{
+    background-color: #AD002B;
+    border-radius: 50%;
+    font-size: 30px;
+    width: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    height: 13rem;
+    color: white;
+    transform: translate(1%, -29%);
+}
+.card-body{
+    transform: translate(1%, -19%);
+
+}
+.card-body >h1{
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem 0 ;
+}

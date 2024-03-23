@@ -524,3 +524,6 @@ footer {
     font-weight: 600;
     color:#757575    !important;
 }
+.w-fit{
+    width: fit-content;
+}

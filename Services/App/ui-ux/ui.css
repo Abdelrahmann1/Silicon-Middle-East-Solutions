@@ -13,13 +13,8 @@
     font-size: 50px;color:#AD002B;
 }
 .card-title{
-    font-size: 20px;
+    font-size: 30px;
     
-}
-.fa-play{
-    font-size: 20px;
-color: #AD002B;
-height: fit-content;
 }
 .number{
 background-color: #AD002B;
@@ -68,22 +63,18 @@ a:hover{
     padding: .5rem 1rem;
     background-color: rgb(202, 2, 2);
 }
-/* 
-.card-text{
-    color: #263238;
-    font-size: 16px !important;
-    font-weight: 700;
-} */
-.listaya{
-    display: flex;
-    gap: .5rem;
-    margin-bottom: 1rem;
-    align-items: center;
-}
 .sec-desc2{
-    font-size: 18px;
-    margin:0;
+    font-size: 17px !important;
 }
-.sec-title{
-    font-size: 35px !important;
+.fa-play{
+color: #263238 !important;
+margin: 0 1rem;
+}
+.title-sm{
+    font-size: 22px ;
+}.start-btn-por-active:hover {
+    background-color: rgb(94, 0, 0)          !important;
+}.bolder{
+    font-weight: 700;
+
 }
