@@ -10,7 +10,7 @@
 .img-fluid{
     width: 50%;
 }.fabe{
-    font-size: 50px;color:#AD002B;
+    font-size: 50px;color:#6f5393;
 }
 .card-title{
     font-size: 20px;
@@ -18,11 +18,11 @@
 }
 .fa-play{
     font-size: 20px;
-color: #AD002B;
+color: #6f5393;
 height: fit-content;
 }
 .number{
-background-color: #AD002B;
+background-color: #6f5393;
 border-radius: 50%;
 font-size: 30px;
 width: 3rem;
@@ -31,7 +31,7 @@ color: white;
 text-align: center;
 }
 a:hover{
-  color:#AD002B;
+  color:#6f5393;
 
 }
 .preview-card{
@@ -66,7 +66,7 @@ a:hover{
     border-radius: 5px !important;
     margin: 1rem 0;
     padding: .5rem 1rem;
-    background-color: rgb(202, 2, 2);
+    background-color: #6f5393;
 }
 /* 
 .card-text{

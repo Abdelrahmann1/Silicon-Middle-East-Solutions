@@ -1,3 +1,6 @@
+/* #6f5393
+#94d6d3
+#fabbb6 */
 .btn {
     border-radius: 10px !important;
 }
@@ -25,24 +28,31 @@ a,a:hover{
 
 .navbar,
 footer {
-    background-color: #263238 !important;
+    background-color: #94d6d3 !important;
 
 }
 
 .navbar .navbar-nav .nav-link {
-    color: #fff;
+    color: #94d6d3;
 }
 
 .navbar .navbar-nav .nav-link:hover {
-    color: #ac0c17;
+    color: #6f5393;
 }
 
 .navbar .navbar-nav .active>.nav-link {
-    color: #ac0c17;
+    color: #6f5393;
+}
+.buttn{
+    background-color: #94d6d3 !important;
+    color: #fff !important;
 }
 
+
+
+
 footer a.text-light:hover {
-    color: #ac0c17 !important;
+    color: #6f5393 !important;
     text-decoration: none;
 }
 
@@ -108,11 +118,12 @@ footer .cizgi {
     text-align: center !important;
 } */
 .logo-img-nav {
-    width: 180px;
+    width: 160px;
 }
 
 .navbar {
-    background-color: #263238 !important;
+    background-color: #fff !important;
+    height:80px !important ;
 }
 
 .first0img {
@@ -122,7 +133,7 @@ footer .cizgi {
 .red-title {
     font-size: 40px;
     font-family: Montserrat, Arial;
-    color: red;
+    color: #6f5393;
 }
 
 .secon-title {
@@ -141,12 +152,12 @@ footer .cizgi {
     font-size: 22px;
     margin: 1rem 0;
     padding: 1rem 2rem;
-    background-color: rgb(202, 2, 2);
+    background-color: #6f5393;
 }
 
 .klam>h1 {
     font-size: 25px;
-    color: rgb(197, 2, 2);
+    color: #6f5393;
 }
 
 .klam>p {
@@ -156,7 +167,7 @@ footer .cizgi {
 }
 
 .preview-card {
-    color: #bb002f;
+    color: #6f5393;
     text-align: end;
     width: 80%;
     display: inline-block;
@@ -166,7 +177,7 @@ footer .cizgi {
 
 .fa-chevron-right::before {
     content: "\f054";
-    background-color: #bb002f;
+    background-color: #6f5393;
 
     border-radius: 10px !important;
 
@@ -175,7 +186,7 @@ footer .cizgi {
 
 .fa-chevron-left::before {
     content: "\f053";
-    background-color: #bb002f;
+    background-color: #6f5393;
 
     border-radius: 10px !important;
 
@@ -194,7 +205,7 @@ footer .cizgi {
 }
 
 .carousel-indicators [data-bs-target] {
-    background-color: #bb002f;
+    background-color: #6f5393;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -204,7 +215,7 @@ footer .cizgi {
     font-size: 32px;
     text-align: center;
 
-    color: #AD002B;
+    color: #6f5393;
 }
 
 .clutch {
@@ -227,7 +238,7 @@ footer .cizgi {
 }
 
 .klam-col>h1 {
-    color: #ac0c17;
+    color: #6f5393;
     font-size: 28px;
 
     text-align: center;
@@ -252,7 +263,7 @@ footer .cizgi {
     font-size: 36px;
     line-height: 30px;
     font-weight: 900;
-    color: #ad002b;
+    color: #6f5393;
 }
 
 .secon-title2 {
@@ -290,7 +301,7 @@ footer .cizgi {
 }
 
 .preview-card3 {
-    color: #bb002f;
+    color: #6f5393;
     text-align: end;
     /* width: 80%; */
     display: inline-block;
@@ -374,7 +385,7 @@ footer .cizgi {
 }
 
 .mini-card>h2 {
-    color: #ac0c17;
+    color: #6f5393;
 
     font-size: 15px;
 }
@@ -407,7 +418,11 @@ footer {
 @media (max-width:1199px) {
 
 
-
+    .logo-img-nav {
+        width:83px ;
+    }
+    
+ 
 
     .first0img {
         width: 100%;
@@ -416,7 +431,7 @@ footer {
     .red-title {
         margin-top: 1rem;
         font-size: 35px;
-        color: red;
+        color: 6f5393;
     }
 
     .secon-title {

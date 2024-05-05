@@ -17,9 +17,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top ">
+    <nav class="navbar navbar-expand-lg fixed-top "  id="header">
         <div class="container">
-            <a class="navbar-brand text-white" href="#"><img class="logo-img-nav" src="../../../assets/logo.png"
+            <a class="navbar-brand text-white" href="#"><img class="logo-img-nav" src="../../../assets//SMES.png"
                     alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
                 aria-controls="offcanvasExample">
@@ -31,7 +31,7 @@
                         <a class="nav-link" href="../../../index.html">Home</a>
                     </li>
                     <li class="nav-item  pl-1">
-                        <a class="nav-link" href="./About_us/about.html">About Us</a>
+                        <a class="nav-link" href="../../../About_us/about.html">About Us</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -70,7 +70,7 @@
                         <a class="nav-link" href="./Portfolio/portfolio.html">Portfolio</a>
                     </li>
                     <li class="nav-item pl-1">
-                        <a class="nav-link mx-2 btn rounded-0 btn-danger" href="../../../Contact_us/contact.html">Contact
+                        <a class="nav-link mx-2 btn rounded-0 buttn" href="../../../Contact_us/contact.html">Contact
                             Us</a>
                     </li>
                 </ul>
@@ -136,7 +136,7 @@
                                 class="fa fa-phone fa-fw fa-rotate-180 mr-1"></i>Portfolio</a>
                     </li>
                     <li class="nav-item pl-1">
-                        <a class="nav-link mx-2 btn rounded-0 btn-danger" href="./Contact_us/contact.html">Contact
+                        <a class="nav-link mx-2 btn rounded-0 buttn" href="./Contact_us/contact.html">Contact
                             Us</a>
                     </li>
                 </ul>
@@ -152,7 +152,7 @@
             <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column align-items-start  ">
                 <p class="secon-title">Mobile App Development is your Big Idea in every hand </p>
                 <p class="first-desc">Your next big idea might need to be in the hand of every potential customer! That's why we have the best developers for your custom mobile application development in Egypt. For both native and cross-platform development. Employing the best technologies selected for your project, and clear standards for the mobile app performance on our development cycle, to guarantee the best user experience of our products.</p>
-                <a class="btn start-btn rounded-0 btn-danger text-white" href="#process">Our process</a>
+                <a class="btn start-btn rounded-0 buttn text-white" href="#process">Our process</a>
 
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-row">
@@ -364,7 +364,7 @@
 
     <div class="container mb-5 mt-5" id="process">
         <div class="row flex-row justify-content-center">
-            <a class="btn start-btn-por-active rounded-0 btn-danger filter-btn w-auto text-white" data-category="Gethering">Gethering information</a>
+            <a class="btn start-btn-por-active rounded-0 buttn filter-btn w-auto text-white" data-category="Gethering">Gethering information</a>
             <a class="btn start-btn-por rounded-0 btn-grey w-auto text-white filter-btn" data-category="UI/UX">UI/UX App Design</a>
             <a class="btn start-btn-por rounded-0 btn-grey w-auto filter-btn text-white" data-category="app-Development">Mobile app Development</a>
             <a class="btn start-btn-por rounded-0 btn-grey w-auto filter-btn text-white" data-category="backend-Development">Backend Development</a>
@@ -549,7 +549,7 @@
                                         <br>
                                         <span class="bolder">QTS</span> one of the top mobile app development companies in Egypt and USA. we aim to provide tailored solutions that meet our clients' needs while delivering lasting business value.</p>
                                 </div>
-                                <a class="btn start-btn rounded-0 btn-danger w-fit  text-white" href="#process">Our process</a>
+                                <a class="btn start-btn rounded-0 buttn w-fit  text-white" href="#process">Our process</a>
 
                             </div>
                     </div>
@@ -818,7 +818,16 @@
 
     </footer>
     <!-- Footer -->
-
+    <script>
+        window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      if (window.scrollY > 0) {
+          header.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.1)';
+      } else {
+          header.style.boxShadow = 'none';
+      }
+  });
+  </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>

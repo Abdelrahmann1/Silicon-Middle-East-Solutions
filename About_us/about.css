@@ -89,7 +89,7 @@ width: 80%;
     text-align: center;
     margin: 1%;
 font-size:  13rem;
-color: #ac0c17;
+color: #6f5393;
 }
 .cardaya-sym{
     border: none;
@@ -98,7 +98,7 @@ color: #ac0c17;
 }
 .fa-chevron-right::before {
     content: "\f054";
-    background-color: #bb002f;
+    background-color: #6f5393;
 
     border-radius: 10px !important;
 
@@ -107,7 +107,7 @@ color: #ac0c17;
 
 .fa-chevron-left::before {
     content: "\f053";
-    background-color: #bb002f;
+    background-color: #6f5393;
 
     border-radius: 10px !important;
 

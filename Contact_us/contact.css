@@ -1,6 +1,6 @@
 .contact-icon{
     padding: 10px;
-    background-color: #ac0c17;
+    background-color: #6f5393;
     border-radius: 50%;
     color: white;
 }
@@ -36,12 +36,12 @@
 
 .login-btn {
   padding: 13px 30px;
-  background-color: #ac0c17;
+  background-color: #6f5393;
   border-radius: 0;
   font-size: 20px;
   font-weight: bold;
   color: #fff; }
   .login-btn:hover {
-    border: 1px solid #ac0c17;
+    border: 1px solid #6f5393;
     background-color: transparent;
     color: #384146; }
